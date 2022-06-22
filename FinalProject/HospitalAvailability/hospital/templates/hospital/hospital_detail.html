@@ -1,0 +1,63 @@
+{% extends 'hospital/base.html' %}
+{% block content %}
+<style>
+    .display-4 {
+        font-weight: bold;
+        color: rgb(10, 83, 107);
+    }
+
+    .td {
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.589);
+    }
+
+    div {
+        padding: 10px 0;
+    }
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+    tr:hover{
+       
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+</style>
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="mt-4">
+            <p class="display-4">{{hospital.name}}</p>
+            <table class="table">
+                <tr>
+                    <td class="td">Address:</td>
+                    <td>{{hospital.address}}</td>
+                </tr>
+                <tr>
+                    <td class="td">Contact No.:</td>
+                    <td>{{hospital.phone}}</td>
+                </tr>
+                <tr>
+                    <td class="td">City</td>
+                    <td>{{hospital.city}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</section>
+<br>
+
+
+</html>
+
+
+</body>
+
+</html>
+
+
+
+{% endblock %}

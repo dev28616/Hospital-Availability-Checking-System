@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <style>
+    body {
+      background-color: rgb(236, 231, 224);
+    }
+  </style>
+  <title>Health Care Facilities</title>
+</head>
+
+<body>
+
+  <!-- As a link 
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="/templates/hospital/registration.html">Co</a>
+  </nav>-->
+
+  <!-- As a heading 
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">Mother's Care</span>
+  </nav>-->
+  <!--       NavBar     -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+    <a class="navbar-brand" href="#">Health Care Facility</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#footer">About Us</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <div class="container-fluid mt-40">
+    {% block content %}
+    {%endblock%}
+  </div>
+
+
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title text-center">
+        <h2>Contact</h2>
+        <p>General health needs include health promotion, preventive care (immunization, general health screening),
+          treatment of acute and chronic illness, and appropriate referral for more specialized needs where required.
+        </p>
+      </div>
+    </div>
+
+   <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.4550042371156!2d77.508355414823!3d13.070324490791187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae2323fd61d525%3A0x4faeff0c0e2e5573!2sR.R.%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1654914058817!5m2!1sen!2sin"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    <div class="container">
+      <div class="row mt-5">
+
+        <div class="col-lg-4">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>Raja Reddy Layout, Hesarghatta Rd, Chikkabanavara, Bengaluru, Karnataka 560090</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>technosapien4@example.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+91 8945899803</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-8 mt-5 mt-lg-0">
+
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+           <button><a onclick="alert('Great! Your message has been receives..')" class="btn btn default" href="#"></a>SUBMIT</button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+<hr>
+
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Health Care Facilities</h3>
+            <p>
+              Techno Sapiens <br><br>
+              <strong>Phone:</strong> +91 8945899803<br>
+              <strong>Email:</strong> technosapiens4@example.com<br>
+            </p>
+          </div>       
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;" class="container d-md-flex py-4">
+
+      <div  class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Health Care Facilities</span></strong>. All Rights Reserved
+        </div>
+        
+      </div>
+     
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
